@@ -49,10 +49,8 @@ router.get('/opportunities/me', requireAuth, async (req: AuthenticatedRequest, r
     const user = req.user!;
     const limit = parseInt(req.query.limit as string || '5', 10);
 
-    const artisan = await db.getArtisanByUserId(user.user_id);
-    if (!artisan) {
-      throw new NotFoundError('Artisan profile not found');
-    }
+    const nameHint = user.raw?.user_metadata?.name || user.email?.split('@')[0] || 'Artisan';
+    const artisan = await db.getOrCreateArtisan(user.user_id, nameHint);
 
     const { items: products } = await db.getProductsByArtisan(artisan.id, 50, 0);
 
