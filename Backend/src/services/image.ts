@@ -4,7 +4,8 @@ import { FileTooLargeError, InvalidFileTypeError, ValidationError } from '../typ
 
 let sharp: any = null;
 try {
-  sharp = require('sharp');
+  const dynamicRequire = eval('require');
+  sharp = dynamicRequire('sharp');
 } catch (err) {
   console.warn('WARNING: Sharp library failed to load. Image enhancement will fall back to raw bytes.');
 }
