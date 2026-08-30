@@ -62,8 +62,14 @@ const request = async <T>(
       return {} as T;
     }
 
-    const payload = await response.json();
-    
+    const rawText = await response.text();
+    let payload: any = {};
+    try {
+      payload = rawText ? JSON.parse(rawText) : {};
+    } catch (_) {
+      throw new Error(`Server returned error (${response.status}): ${rawText.substring(0, 100)}`);
+    }
+
     if (!response.ok) {
       throw new Error(payload.error?.message || `HTTP error! Status: ${response.status}`);
     }
