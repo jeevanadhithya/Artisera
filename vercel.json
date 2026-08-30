@@ -1,7 +1,5 @@
 {
-  "outputDirectory": "dist/client",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.ts" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/(.*)", "destination": "/api/index.ts" }
   ]
 }
