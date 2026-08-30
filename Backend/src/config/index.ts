@@ -56,9 +56,9 @@ export const config: Config = {
   PORT: parseInt(process.env.PORT || '8000', 10),
   ENVIRONMENT: process.env.ENVIRONMENT || 'development',
   
-  SUPABASE_URL: process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || '',
-  SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || '',
-  SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY || '',
+  SUPABASE_URL: process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || 'https://uxjgekvgaxrcvzhatzmt.supabase.co',
+  SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4amdla3ZnYXhyY3Z6aGF0em10Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NzY2MzAwMywiZXhwIjoyMTAzMjM5MDAzfQ.lNXYGF54Mow6piIi_u40yJ6zdP-qJdj8LSt5sD1DbXU',
+  SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4amdla3ZnYXhyY3Z6aGF0em10Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc2NjMwMDMsImV4cCI6MjEwMzIzOTAwM30.GrI3IQGRwqggD7Qj3DsJRSsyeoDMHLSzM1loTgaiUFI',
   
   LLM_PROVIDER: (process.env.LLM_PROVIDER === 'qwen' ? 'qwen' : 'gemini') as 'gemini' | 'qwen',
   VLLM_BASE_URL: process.env.VLLM_BASE_URL,
