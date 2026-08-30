@@ -27,13 +27,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const userRole = currentUser.user_metadata?.['role'] || 'artisan';
       setRole(userRole);
       
-      if (userRole === 'artisan' || userRole === 'admin') {
+      const profileData = await api.get<any>('/profile/me');
+      if (profileData && profileData.profile) {
+        setProfile(profileData.profile);
+        setRole(profileData.role || userRole);
+      } else {
+        // Fallback to /artisans/me
         const artisanProfile = await api.get<any>('/artisans/me');
         setProfile(artisanProfile);
-      } else {
-        const buyerProfile = await api.get<any>('/profile/me');
-        setProfile(buyerProfile.profile);
-        setRole(buyerProfile.role);
       }
     } catch (e) {
       console.error('Failed to fetch user profile context:', e);

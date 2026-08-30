@@ -18,8 +18,9 @@ router.post('/requests', requireAuth, requireBuyer, requireVerifiedProfile, asyn
       requestData.deadline = new Date(requestData.deadline).toISOString().split('T')[0];
     }
 
-    const created = await db.createBuyerRequest(user.user_id, requestData);
-    console.log(`Buyer request created: ${created.id} by ${user.user_id}`);
+    const buyer = await db.getOrCreateBuyer(user.user_id);
+    const created = await db.createBuyerRequest(buyer.id, requestData);
+    console.log(`Buyer request created: ${created.id} by buyer ${buyer.id}`);
     res.status(201).json(success(created));
   } catch (error) {
     next(error);

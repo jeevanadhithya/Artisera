@@ -1,6 +1,9 @@
 import { supabase } from './supabase';
 
 const getApiBaseUrl = () => {
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
   // Local development: use the separate backend dev server
   if (typeof window !== 'undefined' &&
       (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {

@@ -1,9 +1,34 @@
 import dotenv from 'dotenv';
 import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
 
-// Load environment variables from unified .env file
-dotenv.config();
-dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+let currentDir = process.cwd();
+try {
+  // @ts-ignore
+  if (typeof __dirname !== 'undefined') {
+    // @ts-ignore
+    currentDir = __dirname;
+  } else if (import.meta && import.meta.url) {
+    currentDir = path.dirname(fileURLToPath(import.meta.url));
+  }
+} catch (_) {}
+
+// Candidate paths to search for .env
+const candidateEnvPaths = [
+  path.resolve(process.cwd(), '.env'),
+  path.resolve(process.cwd(), 'Backend/.env'),
+  path.resolve(currentDir, '../../.env'),
+  path.resolve(currentDir, '../../../.env'),
+  path.resolve(currentDir, '../.env'),
+];
+
+for (const envPath of candidateEnvPaths) {
+  if (fs.existsSync(envPath)) {
+    dotenv.config({ path: envPath });
+  }
+}
+dotenv.config(); // fallback default
 
 export interface Config {
   PORT: number;
