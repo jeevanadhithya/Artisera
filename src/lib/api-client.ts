@@ -1,14 +1,16 @@
 import { supabase } from './supabase';
 
 const getApiBaseUrl = () => {
-  const envUrl = import.meta.env['VITE_API_BASE_URL'];
-  if (envUrl) return envUrl;
-  
-  // Auto-detect production backend fallback when running on Vercel (same-origin /api)
+  // Always use same-origin relative /api when deployed on Vercel or non-localhost host
   if (typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1')) {
     return '/api';
   }
-  
+
+  const envUrl = import.meta.env['VITE_API_BASE_URL'];
+  if (envUrl && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
+    return envUrl;
+  }
+
   return 'http://localhost:8000/api';
 };
 
