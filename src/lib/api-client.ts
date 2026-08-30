@@ -1,17 +1,13 @@
 import { supabase } from './supabase';
 
 const getApiBaseUrl = () => {
-  // Always use same-origin relative /api when deployed on Vercel or non-localhost host
-  if (typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1')) {
-    return '/api';
+  // Local development: use the separate backend dev server
+  if (typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+    return 'http://localhost:8000/api';
   }
-
-  const envUrl = import.meta.env['VITE_API_BASE_URL'];
-  if (envUrl && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
-    return envUrl;
-  }
-
-  return 'http://localhost:8000/api';
+  // Production (Vercel): same-origin relative path — frontend and backend on same domain
+  return '/api';
 };
 
 const API_BASE_URL = getApiBaseUrl();

@@ -48,7 +48,7 @@ export interface Config {
 
 // Helper to parse comma-separated string to string array
 const parseCorsOrigins = (originsStr?: string): string[] => {
-  if (!originsStr) return ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:8080'];
+  if (!originsStr) return ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:8080', 'https://artisera.vercel.app'];
   return originsStr.split(',').map(o => o.trim()).filter(Boolean);
 };
 

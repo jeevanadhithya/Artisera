@@ -15,6 +15,7 @@ function Signup() {
   const [password, setPassword] = useState('');
   const [role, setRole] = useState<'artisan' | 'buyer'>('artisan');
   const [loading, setLoading] = useState(false);
+  const [showVerifyEmail, setShowVerifyEmail] = useState(false);
   const navigate = useNavigate();
 
   const handleEmailSignup = async (e: React.FormEvent) => {
@@ -43,8 +44,8 @@ function Signup() {
         toast.success('Registration successful! Welcome to Artisera.');
         navigate({ to: '/' });
       } else {
-        toast.success('Registration successful! Please check your email for confirmation link.');
-        navigate({ to: '/login' });
+        // Email confirmation required
+        setShowVerifyEmail(true);
       }
     } catch (error: any) {
       toast.error(error.message || 'Registration failed. Please try again.');
@@ -73,6 +74,33 @@ function Signup() {
 
   return (
     <PhoneFrame chrome={false}>
+      {showVerifyEmail ? (
+        <div className="flex min-h-screen flex-col items-center justify-center px-6 py-12">
+          <div className="text-center space-y-5 max-w-sm animate-in fade-in zoom-in duration-300">
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-500/10 border-2 border-green-500/20">
+              <Mail className="h-10 w-10 text-green-500" />
+            </div>
+            <h1 className="font-display text-2xl font-extrabold tracking-tight text-primary">
+              Verify Your Email
+            </h1>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              We've sent a confirmation link to <strong className="text-foreground">{email}</strong>.
+              Please check your inbox (and spam folder) and click the link to activate your account.
+            </p>
+            <div className="rounded-xl bg-secondary/50 border border-border p-4 text-xs text-muted-foreground space-y-1">
+              <p>✓ Check your <strong>inbox</strong> and <strong>spam/junk</strong> folder</p>
+              <p>✓ Click the verification link in the email</p>
+              <p>✓ Then come back and <strong>sign in</strong></p>
+            </div>
+            <Link
+              to="/login"
+              className="btn-cta w-full py-3 mt-4 flex justify-center items-center gap-2 font-bold inline-block text-center"
+            >
+              Go to Sign In
+            </Link>
+          </div>
+        </div>
+      ) : (
       <div className="flex min-h-screen flex-col justify-between px-6 py-12">
         <div className="space-y-6 pt-5">
           <div className="text-center">
@@ -219,6 +247,7 @@ function Signup() {
           </Link>
         </p>
       </div>
+      )}
     </PhoneFrame>
   );
 }
