@@ -134,6 +134,17 @@ app.use(`${API_PREFIX}/wishlist`, wishlistRouter);
 app.use(`${API_PREFIX}/admin`, adminRouter);
 app.use(`${API_PREFIX}/profile`, profileRouter);
 
+// Fallbacks for direct route matching
+app.use('/health', healthRouter);
+app.use('/artisans', artisansRouter);
+app.use('/products', productsRouter);
+app.use('/market', marketRouter);
+app.use('/buyers', buyersRouter);
+app.use('/matching', matchingRouter);
+app.use('/wishlist', wishlistRouter);
+app.use('/admin', adminRouter);
+app.use('/profile', profileRouter);
+
 // ─── Global Error Handler ────────────────────────────────────────────────────
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   // If it's a known application error, send standard payload
