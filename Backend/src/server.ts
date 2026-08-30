@@ -1,5 +1,6 @@
 import app from './app';
 import { config } from './config';
+import { checkSupabaseConnection } from './services/supabase';
 
 // Only listen if not running as a Vercel Serverless Function
 let server: any;
@@ -12,6 +13,7 @@ if (process.env.VERCEL !== '1') {
     console.log(`LLM Provider: ${config.LLM_PROVIDER}`);
     console.log(`Supabase URL: ${config.SUPABASE_URL}`);
     console.log(`=========================================`);
+    checkSupabaseConnection();
   });
 }
 

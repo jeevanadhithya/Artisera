@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently -n \"frontend,backend\" -c \"cyan,yellow\" \"npm run dev:frontend\" \"npm run dev:backend\"",
     "dev:frontend": "vite dev",
-    "dev:backend": "npx nodemon Backend/src/server.ts",
+    "dev:backend": "npx nodemon --exec \"npx tsx\" Backend/src/server.ts",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
