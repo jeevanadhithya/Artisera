@@ -73,7 +73,7 @@ const transcribeSarvam = async (
 
   // Use Node.js built-in global FormData and Blob
   const formData = new FormData();
-  const fileBlob = new Blob([audioBytes], { type: contentType || 'audio/webm' });
+  const fileBlob = new Blob([new Uint8Array(audioBytes)], { type: contentType || 'audio/webm' });
   formData.append('file', fileBlob, filename);
   formData.append('model', config.SARVAM_SPEECH_MODEL || 'saaras:v3');
   formData.append('mode', config.SARVAM_SPEECH_MODE || 'transcribe');

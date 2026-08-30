@@ -62,9 +62,9 @@ export function Stat({
   );
 }
 
-export function Chip({ children }: { children: ReactNode }) {
+export function Chip({ children, active }: { children: ReactNode; active?: boolean }) {
   return (
-    <span className="rounded-md bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+    <span className={`rounded-md px-2.5 py-1 text-xs font-medium ${active ? 'bg-primary text-primary-foreground font-bold' : 'bg-secondary text-secondary-foreground'}`}>
       {children}
     </span>
   );
