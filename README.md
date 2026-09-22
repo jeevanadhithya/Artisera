@@ -427,7 +427,7 @@ erDiagram
 ```
 
 ### Core Tables Summary
-- `profiles`: Unified user profiles (`artisan`, `buyer`, `admin`), KYC verification, languages.
+- `profiles`: Unified user profiles (`artisan`, `buyer`, `admin`), KYC verification, languages. 
 - `artisans`: Domain craft cluster data, craft traditions, and village location.
 - `products`: Canonical digital twins (dimensions, pricing, descriptions, HSN, status).
 - `product_images`: Original & enhanced studio image URLs and CV analysis outputs.

@@ -106,7 +106,7 @@ export class GeminiAnalysisProvider {
   private apiKey: string;
 
   constructor() {
-    this.modelName = config.GEMINI_MODEL || 'gemini-2.5-flash';
+    this.modelName = config.GEMINI_MODEL || 'gemini-flash-lite-latest';
     this.apiKey = config.GEMINI_API_KEY || '';
   }
 

@@ -92,7 +92,7 @@ export const config: Config = {
   VLLM_BASE_URL: process.env.VLLM_BASE_URL,
   VLLM_API_KEY: process.env.VLLM_API_KEY,
   GEMINI_API_KEY: process.env.GEMINI_API_KEY,
-  GEMINI_MODEL: process.env.GEMINI_MODEL || 'gemini-3.6-flash',
+  GEMINI_MODEL: process.env.GEMINI_MODEL || 'gemini-flash-lite-latest',
   
   SARVAM_API_KEY: process.env.SARVAM_API_KEY,
   SARVAM_BASE_URL: process.env.SARVAM_BASE_URL || 'https://api.sarvam.ai',

@@ -28,19 +28,34 @@ const verifyOwnership = async (productId: string, userId: string, userRole: stri
       throw new OwnershipError('product');
     }
   }
+
+const router = Router();
+const upload = multer({ storage: multer.memoryStorage() });
+
+const success = (data: any) => ({ success: true, data });
+
+// Helper to verify product ownership
+const verifyOwnership = async (productId: string, userId: string, userRole: string) => {
+  const product = await db.getProductById(productId);
+  if (userRole !== 'admin') {
+    const artisan = await db.getArtisanByUserId(userId);
+    if (!artisan || artisan.id !== product.artisan_id) {
+      throw new OwnershipError('product');
+    }
+  }
   return product;
 };
 
 // ─── Create Product (POST /products) ──────────────────────────────────────────
 router.post('/', getOptionalUser, async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
   try {
-    let artisanId: string;
+    let artisanId: string = req.body?.artisan_id || '';
     if (req.user) {
       const user = req.user;
-      const nameHint = user.raw?.user_metadata?.name || user.email?.split('@')[0] || 'Artisan';
+      const nameHint = req.body?.artisan_name || user.raw?.user_metadata?.name || user.email?.split('@')[0] || 'Artisan';
       const artisan = await db.getOrCreateArtisan(user.user_id, nameHint);
       artisanId = artisan.id;
-    } else {
+    } else if (!artisanId) {
       const anyArtisan = await db.queryOne<any>(`SELECT id FROM public.artisans ORDER BY created_at ASC LIMIT 1;`);
       if (anyArtisan) {
         artisanId = anyArtisan.id;
