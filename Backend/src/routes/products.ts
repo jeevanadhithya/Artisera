@@ -29,20 +29,6 @@ const verifyOwnership = async (productId: string, userId: string, userRole: stri
     }
   }
 
-const router = Router();
-const upload = multer({ storage: multer.memoryStorage() });
-
-const success = (data: any) => ({ success: true, data });
-
-// Helper to verify product ownership
-const verifyOwnership = async (productId: string, userId: string, userRole: string) => {
-  const product = await db.getProductById(productId);
-  if (userRole !== 'admin') {
-    const artisan = await db.getArtisanByUserId(userId);
-    if (!artisan || artisan.id !== product.artisan_id) {
-      throw new OwnershipError('product');
-    }
-  }
   return product;
 };
 

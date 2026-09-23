@@ -17,9 +17,19 @@
 
 <br/>
 
+[![Download APK](https://img.shields.io/badge/Release-APK%20v1.0.0-E65100?style=for-the-badge&logo=android&logoColor=white)](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-App%20Screenshots%20%26%20Assets-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
+[![YouTube Video](https://img.shields.io/badge/YouTube-Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](#-product-demo-video)
+
+<br/>
+
 | 🌐 **Live Cloud API** | 🩺 **Diagnostics Portal** | 🎯 **Official Submission** |
 |:---:|:---:|:---:|
 | [`artisera-backend.vercel.app/api`](https://artisera-backend.vercel.app/api) | [`artisera-backend.vercel.app`](https://artisera-backend.vercel.app/) | **SIH 2026 · PS-26090** |
+
+| 📱 **Android APK Release** | 📁 **UI Screenshots & Drive Folders** | 🎥 **Product Demo Video** |
+|:---:|:---:|:---:|
+| [**Download v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0) | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) | [**Watch on YouTube**](#-product-demo-video) |
 
 </div>
 
@@ -71,6 +81,7 @@
 ## 📚 Table of Contents
 
 - [🎯 Smart India Hackathon Context](#-smart-india-hackathon-context)
+- [🎥 Product Demo Video & Screenshots](#-product-demo-video)
 - [🔍 Problem](#-problem)
 - [💡 Solution](#-solution)
 - [🚀 Key Features](#-key-features)
@@ -105,6 +116,48 @@
 - **Theme / Category**: Heritage & Culture / Inclusive Digital Commerce
 - **Category Type**: Software Edition
 - **Target Beneficiaries**: Traditional rural weavers, tribal metalworkers, terracotta potters, stone & wood carvers, and micro-scale handicraft entrepreneurs.
+
+---
+
+## 🎥 Product Demo Video & Screenshots
+
+<a id="product-demo-video"></a>
+
+### 🎬 Official Product Video Demonstration
+
+A complete demonstration showcasing physical handmade craft photo capture, voice-to-listing transcription in 7 regional Indic languages, AI background isolation, the fair living wage pricing calculation, and multi-marketplace export dossiers.
+
+[![YouTube Video Demonstration](https://img.shields.io/badge/YouTube-Watch%20Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
+
+- 📺 **Official Video Walkthrough**: [Artisera — Smart Cataloging & Market Linkage Platform](https://youtube.com)
+
+<br/>
+
+### 📁 High-Resolution App Screenshots & Media Folders (Google Drive)
+
+All high-resolution application screenshots, flow recordings, and asset folders are organized in Google Drive:
+
+🔗 **Google Drive Repository**: [**Artisera App Screenshots & Assets Folders**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
+
+| Folder / Category | Features Demonstrated | Direct Drive Link |
+|:---|:---|:---:|
+| 📱 **Onboarding & Localization** | Welcome onboarding walkthrough, 7 Indic language switcher, Role picker (Artisan vs. Buyer), Supabase authentication. | [Open Drive Folder](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 📸 **AI Intake & Studio** | 5-step stepper intake, camera guidelines, Before/After studio lighting split comparison. | [Open Drive Folder](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| ⚖️ **Living Wage & Pricing** | Interactive Living Wage Pricing Calculator, Geographical Indication (GI) premium, 5-dimension Product Score. | [Open Drive Folder](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 🤝 **Marketplace & B2B Leads** | B2B buyer opportunities feed, RFP proposal submission, multi-channel export (Amazon Karigar, GeM, ONDC, Meesho). | [Open Drive Folder](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 🎬 **Craft Video Reels** | Dedicated vertical artisan reels showcase, craft origin heritage videos, and community feed. | [Open Drive Folder](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+
+<br/>
+
+### 📦 Android Mobile Application Release (APK)
+
+Install and test the mobile application directly on an Android device:
+
+- 🚀 **GitHub Release**: [**Artisera Mobile App v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
+- **Release Version**: `v1.0.0`
+- **File**: `app-release.apk`
+- **Supported OS**: Android 8.0 (API level 26) and above
+- **Architecture**: Universal APK (ARM64, ARMv7, x86_64)
 
 ---
 
@@ -576,8 +629,14 @@ python app.py
 
 ---
 
-### Step 4: Run Flutter Mobile App
+### Step 4: Run Flutter Mobile App (Or Install APK)
 
+#### Option A: Direct APK Installation (Quickest)
+You can directly download and install the compiled Android APK on any Android phone:
+- 📲 **Download APK**: [**Artisera v1.0.0 APK (GitHub Releases)**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
+- 📁 **Screenshots & Media**: [**Google Drive Asset Folders**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
+
+#### Option B: Build & Run from Source
 ```bash
 cd Mobile_App
 flutter pub get
