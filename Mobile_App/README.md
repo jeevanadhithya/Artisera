@@ -17,7 +17,7 @@
 <br/>
 
 [![Download APK](https://img.shields.io/badge/Release-APK%20v1.0.0-E65100?style=for-the-badge&logo=android&logoColor=white)](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
-[![Google Drive](https://img.shields.io/badge/Google%20Drive-App%20Screenshots%20%26%20Assets-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Drive%20Media%20%26%20APK-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
 [![YouTube Video](https://img.shields.io/badge/YouTube-Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](#-product-demo-video)
 
 <br/>
@@ -26,7 +26,7 @@
 |:---:|:---:|:---:|
 | [`artisera-backend.vercel.app/api`](https://artisera-backend.vercel.app/api) | [`artisera-backend.vercel.app`](https://artisera-backend.vercel.app/) | **SIH 2026 · PS-26090** |
 
-| 📱 **Android APK Release** | 📁 **UI Screenshots & Drive Folders** | 🎥 **Product Demo Video** |
+| 📱 **Android APK Release** | 📁 **Google Drive Assets** | 🎥 **Product Demo Video** |
 |:---:|:---:|:---:|
 | [**Download v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0) | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) | [**Watch on YouTube**](#-product-demo-video) |
 
@@ -45,24 +45,23 @@ A complete, step-by-step video demonstration showcasing the mobile app in action
 [![YouTube Video Demonstration](https://img.shields.io/badge/YouTube-Watch%20Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
 
 - 📺 **Official Video Walkthrough**: [Artisera — Smart Cataloging & Market Linkage Platform](https://youtube.com)
+- 📁 **Google Drive Mirror**: Video file is also stored in the `YT Video` folder on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
 
 ---
 
-## 📁 High-Resolution App Screenshots & Media Folders
+## 📁 Evaluation Media & Assets (Google Drive)
 
 <a id="screenshots--media-folders"></a>
 
-All high-resolution application screenshots, flow recordings, and asset folders are organized in Google Drive:
+All high-resolution application screenshots, product demonstration video, and pre-compiled APK are organized in Google Drive:
 
-🔗 **Google Drive Repository**: [**Artisera App Screenshots & Assets Folders**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
+🔗 **Google Drive Repository**: [**Tech Titens - SIH26090**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
 
-### 📂 Organized Drive Folders
-
-- 📱 **Onboarding & Localization**: Welcome flow, 7 Indic languages switcher, Role picker (Artisan vs. Wholesale Buyer), Supabase authentication.
-- 📸 **AI Intake & Studio**: 5-step stepper intake, camera guidelines, Before/After studio lighting split comparison.
-- ⚖️ **Living Wage & Fair Pricing**: Interactive Living Wage Pricing Calculator, Geographical Indication (GI) premium, 5-dimension Product Score.
-- 🤝 **Marketplace & B2B Leads**: B2B buyer opportunities feed, RFP proposal submission, multi-channel export (Amazon Karigar, GeM, ONDC, Meesho).
-- 🎬 **Craft Video Reels**: Dedicated vertical artisan reels showcase, craft origin heritage videos, and community feed.
+| Folder in Google Drive | Contents & Purpose | Access |
+|:---|:---|:---:|
+| 📸 **App Images** | High-resolution screenshots of the 5-step intake, 7 Indic languages, AI studio isolation, living wage pricing calculator, and B2B marketplace. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 🎥 **YT Video** | Product demonstration and evaluator walkthrough video recording. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 📦 **Mobile App Apk** | Pre-compiled Android release APK (`app-release.apk`) added for evaluators. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
 
 ---
 
@@ -72,7 +71,8 @@ All high-resolution application screenshots, flow recordings, and asset folders 
 
 You can directly install the pre-compiled Android release APK without needing Flutter SDK or build tools:
 
-- 🚀 **GitHub Release**: [**Artisera Mobile App v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
+- 🚀 **GitHub Release**: [**Download Artisera v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
+- 📁 **Google Drive**: The APK is also added to the `Mobile App Apk` folder in Google Drive.
 - **Version**: `v1.0.0`
 - **File**: `app-release.apk`
 - **Minimum Android**: Android 8.0 Oreo (API 26)

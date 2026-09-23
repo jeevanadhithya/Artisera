@@ -111,6 +111,9 @@ The AI Image Studio microservice runs BiRefNet-HR deep segmentation.
 
 ## 6. Mobile Application Setup (Flutter)
 
+> [!TIP]
+> **Instant Testing via APK**: If you prefer testing immediately on an Android device without configuring Flutter SDK or Android Studio, download the pre-compiled `app-release.apk` directly from [GitHub Releases](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0). The APK is also available in the `Mobile App Apk` folder on Google Drive. Full app screenshots and demonstration videos are also in `App Images` and `YT Video` on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link).
+
 1. Open a third terminal and navigate to `Mobile_App`:
    ```bash
    cd Mobile_App

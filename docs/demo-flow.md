@@ -27,6 +27,9 @@ journey
 
 ---
 
+> [!NOTE]
+> **Quick Access for Evaluators**: You can follow this walkthrough on an Android smartphone using the pre-compiled APK from [GitHub Releases](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0). The APK is also added to the `Mobile App Apk` folder on Google Drive. Visual screenshots and video recordings corresponding to each step are organized in `App Images` and `YT Video` on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link).
+
 ### Step 1 — Select Language
 - **Screen**: `LanguageSelectionScreen`
 - **Action**: Open the mobile app. Select your preferred native language (e.g., **हिन्दी (Hindi)**, **English**, **বাংলা (Bengali)**, or **தமிழ் (Tamil)**).
