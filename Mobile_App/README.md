@@ -18,7 +18,7 @@
 
 [![Download APK](https://img.shields.io/badge/Release-APK%20v1.0.0-E65100?style=for-the-badge&logo=android&logoColor=white)](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Drive%20Media%20%26%20APK-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
-[![YouTube Video](https://img.shields.io/badge/YouTube-Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](#-product-demo-video)
+[![YouTube Video](https://img.shields.io/badge/YouTube-Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8)
 
 <br/>
 
@@ -28,7 +28,7 @@
 
 | 📱 **Android APK Release** | 📁 **Google Drive Assets** | 🎥 **Product Demo Video** |
 |:---:|:---:|:---:|
-| [**Download v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0) | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) | [**Watch on YouTube**](#-product-demo-video) |
+| [**Download v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0) | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) | [**Watch on YouTube**](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8) |
 
 </div>
 
@@ -42,9 +42,9 @@
 
 A complete, step-by-step video demonstration showcasing the mobile app in action: camera capture, Indic voice notes in regional languages, background isolation, living wage fair pricing calculation, and multi-marketplace export dossiers.
 
-[![YouTube Video Demonstration](https://img.shields.io/badge/YouTube-Watch%20Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
+[![YouTube Video Demonstration](https://img.shields.io/badge/YouTube-Watch%20Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8)
 
-- 📺 **Official Video Walkthrough**: [Artisera — Smart Cataloging & Market Linkage Platform](https://youtube.com)
+- 📺 **Official Video Walkthrough**: [Artisera — Smart Cataloging & Market Linkage Platform](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8)
 - 📁 **Google Drive Mirror**: Video file is also stored in the `YT Video` folder on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
 
 ---
@@ -61,7 +61,7 @@ All high-resolution application screenshots, product demonstration video, and pr
 |:---|:---|:---:|
 | 📸 **App Images** | High-resolution screenshots of the 5-step intake, 7 Indic languages, AI studio isolation, living wage pricing calculator, and B2B marketplace. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
 | 🎥 **YT Video** | Product demonstration and evaluator walkthrough video recording. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
-| 📦 **Mobile App Apk** | Pre-compiled Android release APK (`app-release.apk`) added for evaluators. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 📦 **Mobile App Apk** | Pre-compiled Android release APK (`Artisera-v1.0.0-SIH2026.apk`) added for evaluators. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
 
 ---
 
@@ -74,14 +74,14 @@ You can directly install the pre-compiled Android release APK without needing Fl
 - 🚀 **GitHub Release**: [**Download Artisera v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
 - 📁 **Google Drive**: The APK is also added to the `Mobile App Apk` folder in Google Drive.
 - **Version**: `v1.0.0`
-- **File**: `app-release.apk`
+- **File**: `Artisera-v1.0.0-SIH2026.apk`
 - **Minimum Android**: Android 8.0 Oreo (API 26)
 - **Target Android**: Android 14 (API 34)
 - **Architecture**: Universal APK (ARM64, ARMv7, x86_64)
 
 ```bash
 # Optional: Install via ADB directly
-adb install app-release.apk
+adb install Artisera-v1.0.0-SIH2026.apk
 ```
 
 ---
@@ -97,13 +97,13 @@ Replaces dozens of intimidating text form fields with an intuitive 5-step visual
 5. **Living Wage Pricing & Publish**: Deterministic fair pricing breakdown and instant Supabase persistence.
 
 ### 2. 🗣️ Multilingual Voice Intake (7 Indic Languages)
-- Powered by **Sarvam AI `saaras:v3`** Speech-to-Text.
+- Powered by **Sarvam AI** Speech-to-Text hosted on dedicated AWS EC2 instances.
 - Supports **Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, and English** with Auto-Detect dialect matching.
 - "Polish with Sarvam AI" translates and refines dialect spoken notes into fluent target language listings.
 - Integrated Text-to-Speech (TTS) for low-literacy artisans.
 
 ### 3. 🧠 Multimodal AI Catalog Synthesis
-- Powered by Google's high-throughput low-traffic model: **`gemini-flash-lite-latest`** (with fast fallback to `gemini-3.1-flash-lite`).
+- Powered by **`Qwen3-VL`** multimodal vision-language model hosted on AWS EC2 GPU instances.
 - Analyzes visual features + audio transcript to extract category, craft type, materials, HSN code, and SEO tags.
 - Generates an authentic **Cultural Heritage Story** that highlights artisan lineage.
 
@@ -163,8 +163,8 @@ lib/
 - **`AuthProvider`**: Supabase Authentication, JWT token management, and dynamic artisan attribution.
 - **`CraftProvider`**: Central inventory state, optimistic UI updates, and offline action queue.
 - **`ApiService`**: Direct communication with Supabase Storage and PostgreSQL REST endpoints.
-- **`ArtiseraGeminiService`**: Visual catalog extraction, tag synthesis, and cultural heritage storytelling.
-- **`ArtiseraSpeechService`**: Sarvam AI Indic speech-to-text integration.
+- **`ArtiseraVisionService`**: Visual catalog extraction, tag synthesis, and cultural heritage storytelling powered by hosted Qwen3-VL.
+- **`ArtiseraSpeechService`**: Sarvam AI Indic speech-to-text integration hosted on dedicated AWS EC2.
 - **`ImageEnhancementService`**: Studio lighting isolation pipeline with Remove BG and AWS EC2 BiRefNet fallback.
 
 ---
@@ -199,7 +199,7 @@ flutter run -d android
 ```bash
 flutter build apk --release
 # Built APK will be available at:
-# build/app/outputs/flutter-apk/app-release.apk
+# build/app/outputs/flutter-apk/Artisera-v1.0.0-SIH2026.apk
 ```
 
 ---

@@ -28,8 +28,9 @@ Ensure your development environment meets the following requirements:
    - **`SUPABASE_URL`**: Your Supabase project URL (`https://<project-id>.supabase.co`).
    - **`SUPABASE_ANON_KEY`**: Your public client-safe anon key.
    - **`SUPABASE_SERVICE_ROLE_KEY`**: Your private server-side service role key.
-   - **`GEMINI_API_KEY`**: API key from Google AI Studio.
-   - **`SARVAM_API_KEY`**: API key from Sarvam AI for Indic STT/TTS (optional for basic testing; deterministic fallbacks exist).
+   - **`AI_MODEL_ENDPOINT`**: Endpoint URL for hosted Qwen3-VL on AWS EC2 (`http://ec2-xx-xxx.compute.amazonaws.com:8000`).
+   - **`SPEECH_AI_URL`**: Endpoint URL for hosted Sarvam AI speech service on AWS EC2 (`http://ec2-xx-xxx.compute.amazonaws.com:8001`).
+   - **`IMAGE_AI_URL`**: Endpoint URL for BiRefNet-HR deep segmentation microservice (`http://localhost:8001` or AWS EC2).
 
 > [!CAUTION]
 > Never commit `Backend/.env` or expose the `SUPABASE_SERVICE_ROLE_KEY` in the mobile application.
@@ -112,7 +113,7 @@ The AI Image Studio microservice runs BiRefNet-HR deep segmentation.
 ## 6. Mobile Application Setup (Flutter)
 
 > [!TIP]
-> **Instant Testing via APK**: If you prefer testing immediately on an Android device without configuring Flutter SDK or Android Studio, download the pre-compiled `app-release.apk` directly from [GitHub Releases](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0). The APK is also available in the `Mobile App Apk` folder on Google Drive. Full app screenshots and demonstration videos are also in `App Images` and `YT Video` on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link).
+> **Instant Testing via APK**: If you prefer testing immediately on an Android device without configuring Flutter SDK or Android Studio, download the pre-compiled `Artisera-v1.0.0-SIH2026.apk` directly from [GitHub Releases](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0). The APK is also available in the `Mobile App Apk` folder on Google Drive. Full app screenshots and demonstration videos are also in `App Images` and `YT Video` on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link).
 
 1. Open a third terminal and navigate to `Mobile_App`:
    ```bash

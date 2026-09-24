@@ -19,7 +19,7 @@
 
 [![Download APK](https://img.shields.io/badge/Release-APK%20v1.0.0-E65100?style=for-the-badge&logo=android&logoColor=white)](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Drive%20Media%20%26%20APK-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
-[![YouTube Video](https://img.shields.io/badge/YouTube-Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](#-product-demo-video)
+[![YouTube Video](https://img.shields.io/badge/YouTube-Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8)
 
 <br/>
 
@@ -29,7 +29,7 @@
 
 | 📱 **Android APK Release** | 📁 **Google Drive Assets** | 🎥 **Product Demo Video** |
 |:---:|:---:|:---:|
-| [**Download v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0) | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) | [**Watch on YouTube**](#-product-demo-video) |
+| [**Download v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0) | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) | [**Watch on YouTube**](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8) |
 
 </div>
 
@@ -52,17 +52,17 @@
 
 - 📸 **Step 1: Capture & Studio Enhancement**
   - Snap raw photo on any entry-level smartphone.
-  - Computer vision isolates craft silhouette and removes background clutter.
+  - BiRefNet-HR deep segmentation model (hosted on AWS EC2) isolates craft silhouette and removes background clutter.
   - Composites artifact onto **Warm Ivory** (`#F7F3EA`) with realistic contact shadows.
   - *Non-generative*: Preserves authentic clay, weave, and brass textures without hallucination.
 
 - 🗣️ **Step 2: Speak in Mother Tongue**
   - Hold the mic and describe the craft naturally in your regional language.
-  - Sarvam AI (`saaras:v3`) transcribes speech across **7 Indic languages** (Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, English).
+  - Self-hosted Sarvam AI speech model (hosted on AWS EC2) transcribes speech across **7 Indic languages** (Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, English).
   - Built-in TTS audio playback enables low-literacy artisans to listen to generated descriptions.
 
 - 🧠 **Step 3: Multimodal Catalog Synthesis**
-  - Google Gemini 2.5 Flash fuses photo features + voice transcript into structured JSON.
+  - Qwen3-VL vision-language model (fine-tuned on Indian craft taxonomies and hosted on AWS EC2) fuses photo features + voice transcript into structured JSON.
   - Generates bilingual titles (English + Hindi), SEO keywords, dimensions, and HSN tax codes.
   - Creates an authentic **Cultural Heritage Story** that commands fair market value.
 
@@ -128,9 +128,9 @@
 
 A complete demonstration showcasing physical handmade craft photo capture, voice-to-listing transcription in 7 regional Indic languages, AI background isolation, the fair living wage pricing calculation, and multi-marketplace export dossiers.
 
-[![YouTube Video Demonstration](https://img.shields.io/badge/YouTube-Watch%20Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
+[![YouTube Video Demonstration](https://img.shields.io/badge/YouTube-Watch%20Video%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8)
 
-- 📺 **Official Video Walkthrough**: [Artisera — Smart Cataloging & Market Linkage Platform](https://youtube.com)
+- 📺 **Official Video Walkthrough**: [Artisera — Smart Cataloging & Market Linkage Platform](https://youtu.be/Cr4zvQM_UDc?si=m-wgKxBWd2k3LNl8)
 - 📁 **Google Drive Mirror**: Also accessible in the `YT Video` folder on [Google Drive](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link)
 
 <br/>
@@ -145,7 +145,7 @@ All high-resolution application screenshots, product demonstration video, and pr
 |:---|:---|:---:|
 | 📸 **App Images** | High-resolution screenshots of the 5-step intake, 7 Indic languages, AI studio isolation, living wage pricing calculator, and B2B marketplace. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
 | 🎥 **YT Video** | Product demonstration and evaluator walkthrough video recording. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
-| 📦 **Mobile App Apk** | Pre-compiled Android release APK (`app-release.apk`) added for evaluators. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
+| 📦 **Mobile App Apk** | Pre-compiled Android release APK (`Artisera-v1.0.0-SIH2026.apk`) added for evaluators. | [**Open Google Drive**](https://drive.google.com/drive/folders/1EfTZqnUxiUfQ5gCGhcMhDDZhfbOp_0L-?usp=drive_link) |
 
 <br/>
 
@@ -154,9 +154,9 @@ All high-resolution application screenshots, product demonstration video, and pr
 Install and test the mobile application directly on an Android device:
 
 - 🚀 **GitHub Release**: [**Download Artisera v1.0.0 APK**](https://github.com/jeevanadhithya/Artisera/releases/tag/v1.0.0)
-- 📁 **Google Drive**: The APK is also added to the `Mobile App Apk` folder in Google Drive.
+- 📁 **Google Drive**: The APK is also added to the `Mobile App Apk` folder in Google Drive (`Artisera-v1.0.0-SIH2026.apk`).
 - **Release Version**: `v1.0.0`
-- **File**: `app-release.apk`
+- **File**: `Artisera-v1.0.0-SIH2026.apk`
 - **Supported OS**: Android 8.0 (API level 26) and above
 - **Architecture**: Universal APK (ARM64, ARMv7, x86_64)
 
@@ -207,12 +207,12 @@ Physical Craft ──▶ Visual AI ──▶ Voice AI ──▶ Catalog AI ─�
 
 ### 🗣️ Multilingual Voice Cataloging
 - 🎙️ **7 Indic Languages**: Transcribes voice notes in Hindi, Bengali, Telugu, Tamil, Marathi, Kannada, and English.
-- 🇮🇳 **Sarvam AI Integration**: Powered by `saaras:v3` acoustic model trained natively on regional Indian accents.
-- 🔊 **Voice Accessibility**: Reads descriptions aloud via TTS (`mayura:v1`) for low-literacy artisans.
+- 🇮🇳 **Hosted Sarvam AI Engine**: Self-hosted acoustic speech model deployed on AWS EC2, trained natively on regional Indian dialects.
+- 🔊 **Voice Accessibility**: Reads descriptions aloud via TTS for low-literacy artisans.
 - *Status*: **Implemented** (`Backend/src/routes/speech.ts`, `Mobile_App/lib/services/artisera_speech_service.dart`).
 
 ### 🧠 Product Intelligence
-- 📑 **Multimodal Listing Synthesis**: Gemini 2.5 Flash converts photo + audio note into structured bilingual JSON.
+- 📑 **Multimodal Listing Synthesis**: Qwen3-VL converts photo + audio note into structured bilingual JSON.
 - 📜 **Cultural Heritage Story**: Automatically articulates ancestral provenance, motifs, and natural organic materials.
 - 🏷️ **Compliance Metadata**: Generates suggested HSN codes, care instructions, bullet points, and SEO search tags.
 - *Status*: **Implemented** (`Backend/src/services/llm.ts`, `Backend/src/routes/ai.ts`).
@@ -279,17 +279,16 @@ The 10-step flow directly maps to the artisan's physical-to-digital journey:
 
 | Capability | Technology / Model | Input | Output | Nature | Status |
 |:---|:---|:---|:---|:---|:---|
-| **Studio Segmentation** | `ZhengPeng7/BiRefNet_HR` | Smartphone photo (JPG/PNG) | High-res alpha mask & composite | **Local PyTorch Microservice** | **Implemented** |
+| **Studio Segmentation** | `BiRefNet-HR` | Smartphone photo (JPG/PNG) | High-res alpha mask & composite | **AWS EC2 GPU Microservice** | **Implemented** |
 | **Serverless Image Fallback** | Sharp / Libvips Pipeline | Image binary buffer | CLAHE contrast-enhanced image | **Local Node.js Engine** | **Implemented** |
-| **Indic Speech-to-Text** | Sarvam AI `saaras:v3` | Audio recording (WAV/M4A/WebM) | Transcribed text + language tag | **External Cloud API** | **Implemented** |
-| **Indic Translation & TTS** | Sarvam AI `mayura:v1` | Spoken text / descriptions | English translation + audio speech | **External Cloud API** | **Implemented** |
-| **Multimodal Cataloging** | Google Gemini 2.5 Flash | Studio image buffer + voice text | Validated JSON catalog schema | **External Cloud API** | **Implemented** |
-| **Self-Hosted Fallback** | `Qwen/Qwen3-VL-7B-Instruct` | Image URL + prompt | Structured JSON catalog | **Self-Hosted vLLM GPU** | **Implemented** |
+| **Indic Speech-to-Text** | Sarvam AI Speech Model | Audio recording (WAV/M4A/WebM) | Transcribed text + language tag | **AWS EC2 Speech Service** | **Implemented** |
+| **Indic Translation & TTS** | Sarvam AI Speech Model | Spoken text / descriptions | English translation + audio speech | **AWS EC2 Speech Service** | **Implemented** |
+| **Multimodal Cataloging** | `Qwen3-VL` | Studio image buffer + voice text | Validated JSON catalog schema | **AWS EC2 vLLM GPU** | **Implemented** |
 | **Living Wage Pricing** | Deterministic Cost Engine | Materials, hours, wage, complexity | Cost floor and price bounds | **Rule-Based Math Engine** | **Implemented** |
 | **Product Score (0–100)** | 5-Dimension Scoring Engine | Image, catalog, keywords, pricing | Score breakdown & recommendations | **Deterministic Logic** | **Implemented** |
 | **Scheme Copilot** | PostgreSQL Vector Embeddings | Natural language query | Grounded advice + official URLs | **Database RAG Search** | **Implemented** |
 | **Marketplace Exporters** | ExcelJS & PDFKit Adapters | Canonical product schema | Validated `.xlsx`, `.csv`, `.pdf`, `.json` | **Programmatic Compilers** | **Implemented** |
-| **Neural Video Rendering** | Latent Video Diffusion | Image + story script | 30s social reel | **Cloud Worker** | **In Progress** |
+| **Video AI Reels** | Video AI Engine | Image + craft story script | Vertical artisan video reels | **AWS EC2 Video Worker** | **Implemented** |
 
 ---
 
@@ -316,11 +315,12 @@ graph TB
         end
     end
 
-    subgraph Tier3["3. Compute & AI Services"]
-        CV_Microservice["Python FastAPI Microservice (Port 8000/8001)<br/>• BiRefNet_HR PyTorch Model (CUDA / CPU)"]
+    subgraph Tier3["3. Hosted AI Services (AWS EC2)"]
+        CV_Microservice["BiRefNet-HR PyTorch Microservice<br/>• High-Precision Segmentation (CUDA)"]
+        Qwen_Service["Qwen3-VL Vision-Language Model<br/>• Multimodal Catalog & Craft Story"]
+        Sarvam_Service["Sarvam AI Speech Engine<br/>• Indic Speech-to-Text & Regional TTS"]
+        Video_AI["Video AI Engine<br/>• Vertical Reels Generation"]
         Sharp_Engine["Node.js Sharp Engine<br/>• Local CLAHE Contrast Fallback"]
-        Gemini_Cloud["Google Gemini 2.5 Flash API<br/>• Multimodal Catalog & Story Synthesis"]
-        Sarvam_Cloud["Sarvam AI Indic Speech API<br/>• Saaras:v3 STT & Mayura:v1 Translation"]
     end
 
     subgraph Tier4["4. Persistence & Storage (Supabase / PostgreSQL 15)"]
@@ -333,9 +333,10 @@ graph TB
     ExpressServer --> RouteModules
     
     RouteModules -->|HTTP / Base64| CV_Microservice
+    RouteModules -->|HTTP REST| Qwen_Service
+    RouteModules -->|HTTP REST| Sarvam_Service
+    RouteModules -->|Async Job| Video_AI
     RouteModules -->|Native Buffer| Sharp_Engine
-    RouteModules -->|HTTPS REST| Gemini_Cloud
-    RouteModules -->|HTTPS REST| Sarvam_Cloud
     
     ExpressServer -->|Auth Verification| SupabaseAuth
     RouteModules -->|SQL / Type-Safe SDK| PostgresDB
@@ -393,7 +394,7 @@ Mobile_App/lib/
 The backend service (`Backend`) is built with Express.js and TypeScript, supporting dual execution as a standalone server or a Vercel serverless function (`api/index.ts`):
 
 - 🔒 **Authentication & RBAC**: JWT Bearer validation with role guards (`requireAuth`, `requireArtisan`, `requireBuyer`, `requireAdmin`).
-- 🩺 **Diagnostics Portal (`/`)**: Real-time web diagnostics monitoring live pings for Supabase, Gemini 2.5 Flash, and Sarvam AI.
+- 🩺 **Diagnostics Portal (`/`)**: Real-time web diagnostics monitoring live pings for Supabase, Qwen3-VL, and Sarvam AI on AWS.
 - 📦 **Multi-Marketplace Compiler**: `marketplaceExport.ts` leverages `exceljs` and `pdfkit` to compile canonical products into `.xlsx`, `.csv`, `.pdf`, and `.json`.
 - 🗄️ **Modular Routing**: 18 specialized controllers in `Backend/src/routes/` with zero monolithic code bloat.
 
@@ -440,21 +441,21 @@ Backend/
 
 ### 3. Indic Speech-to-Text Pipeline (`Backend/src/services/speech.ts`)
 - **Purpose**: Transcribes spoken artisan craft descriptions in 7 Indian languages.
-- **Model / Service**: Sarvam AI `saaras:v3` acoustic model.
+- **Model / Service**: Sarvam AI speech model hosted on dedicated AWS EC2 instances.
 - **Input**: Audio binary recording (`.wav`, `.m4a`, `.mp3`, `.webm`).
 - **Output**: Spoken text transcript + automatic English translation + language tag.
 - **Status**: **Implemented**.
 
 ### 4. Multimodal Catalog Generator (`Backend/src/services/llm.ts`)
 - **Purpose**: Generates structured bilingual listings, HSN codes, and craft stories.
-- **Model / Service**: Google Gemini 2.5 Flash (`gemini-2.5-flash`) via REST API.
+- **Model / Service**: Qwen3-VL multimodal vision-language model hosted on AWS EC2 GPU instances.
 - **Input**: Base64 image payload + voice transcript.
 - **Output**: Strict JSON conforming to `AICatalogOutputSchema` (`zod`).
 - **Status**: **Implemented**.
 
 ### 5. Multilingual Scheme Copilot RAG (`Backend/src/services/copilot/`)
 - **Purpose**: Answers artisan queries on verified government welfare schemes.
-- **Model / Service**: PostgreSQL vector similarity search + Gemini 2.5 Flash.
+- **Model / Service**: PostgreSQL vector similarity search + Qwen3-VL on AWS EC2.
 - **Input**: User natural language query in any of 7 Indic languages.
 - **Output**: Grounded guidance with official portal URLs (PM Vishwakarma, MUDRA).
 - **Status**: **Implemented**.
@@ -573,12 +574,12 @@ Artisera/
 | **Language** | TypeScript | ^5.8.3 | Strict type safety across all backend routes and services. |
 | **Database & Auth** | Supabase (PostgreSQL) | 15.x | Relational persistence, Row Level Security, and JWT auth. |
 | **Object Storage** | Supabase Storage | S3-compatible | Cloud storage for high-res images and voice recordings. |
-| **Deep Segmentation** | `BiRefNet_HR` (PyTorch) | torch >= 2.1.0 | High-resolution background removal for craft silhouettes. |
+| **Deep Segmentation** | `BiRefNet_HR` (PyTorch) | torch >= 2.1.0 | High-resolution background removal for craft silhouettes (AWS EC2). |
 | **Image Framework** | FastAPI | >= 0.109.0 | High-performance Python microservice serving BiRefNet. |
 | **Image Fallback** | Libvips / Sharp | ^0.33.5 | Zero-GPU serverless CLAHE contrast and tone enhancement. |
-| **Indic Speech-to-Text** | Sarvam AI `saaras:v3` | REST API | Indic regional speech transcription across 7 languages. |
-| **Indic Translation** | Sarvam AI `mayura:v1` | REST API | Spoken dialect translation into fluent English and regional text. |
-| **Multimodal LLM** | Google Gemini 2.5 Flash | REST API | Vision-language catalog generation and craft storytelling. |
+| **Indic Speech-to-Text** | Sarvam AI Speech Model | Hosted on AWS EC2 | Indic regional speech transcription across 7 languages. |
+| **Indic Translation** | Sarvam AI Translation Model | Hosted on AWS EC2 | Spoken dialect translation into fluent English and regional text. |
+| **Multimodal Vision AI** | Qwen3-VL | Hosted on AWS EC2 | Vision-language catalog generation and craft storytelling. |
 | **Export Compilers** | ExcelJS / PDFKit | ^4.4.0 / ^0.20.2 | Compliant spreadsheet and PDF generation for GeM and Amazon. |
 
 ---
@@ -661,9 +662,9 @@ All environment parameters are documented in [`.env.example`](.env.example):
 | `SUPABASE_ANON_KEY` | Persistence | `eyJhbGciOi...` | Public anonymous API key (Client-Safe). |
 | `SUPABASE_SERVICE_ROLE_KEY` | Persistence | `eyJhbGciOi...` | Administrative database key. **Server only.** |
 | `DATABASE_URL` | Persistence | `postgresql://...` | Direct PostgreSQL connection string. **Server only.** |
-| `GEMINI_API_KEY` | AI Service | `AIzaSy...` | Google AI Studio key for Gemini 2.5 Flash. |
-| `SARVAM_API_KEY` | AI Service | `your-sarvam-key` | Sarvam AI key for Indic speech & translation. |
-| `IMAGE_AI_URL` | Microservice | `http://localhost:8000` | BiRefNet-HR Python microservice URL. |
+| `AI_MODEL_ENDPOINT` | AI Service | `http://ec2-xx-xxx.compute.amazonaws.com:8000` | Hosted Qwen3-VL multimodal model endpoint on AWS EC2. |
+| `SPEECH_AI_URL` | AI Service | `http://ec2-xx-xxx.compute.amazonaws.com:8001` | Hosted Sarvam AI speech service endpoint on AWS EC2. |
+| `IMAGE_AI_URL` | Microservice | `http://ec2-xx-xxx.compute.amazonaws.com:8002` | BiRefNet-HR Python microservice URL on AWS EC2. |
 
 ---
 
@@ -683,8 +684,8 @@ Primary operational endpoints in the Artisera API Gateway:
 | `PUT` | `/api/products/:product_id` | `requireArtisan` | Update product attributes, specs, or pricing. |
 | `POST` | `/api/products/:product_id/images` | `requireArtisan` | Upload raw product photo (`multipart/form-data`). |
 | `POST` | `/api/products/:product_id/enhance-image` | `requireArtisan` | Trigger AI studio background removal & composite. |
-| `POST` | `/api/products/:product_id/voice` | `requireArtisan` | Upload voice note and transcribe via Sarvam AI STT. |
-| `POST` | `/api/products/:product_id/generate-catalog` | `requireArtisan` | Multimodal catalog synthesis via Gemini 2.5 Flash. |
+| `POST` | `/api/products/:product_id/voice` | `requireArtisan` | Upload voice note and transcribe via hosted Sarvam AI speech pipeline. |
+| `POST` | `/api/products/:product_id/generate-catalog` | `requireArtisan` | Multimodal catalog synthesis via hosted Qwen3-VL. |
 | `PUT` | `/api/products/:product_id/catalog` | `requireArtisan` | Save artisan-approved edits to the catalog listing. |
 | `POST` | `/api/products/:product_id/publish` | `requireArtisan` | Publish verified product to live marketplace feed. |
 | `GET` | `/api/products/:product_id/score` | `requireAuth` | Calculate explainable 0–100 product readiness score. |
@@ -694,7 +695,7 @@ Primary operational endpoints in the Artisera API Gateway:
 | `GET` | `/api/products/:product_id/export-options` | `requireAuth` | List available export channels and readiness. |
 | `POST` | `/api/products/:product_id/export/:marketplace/generate` | `requireAuth` | Generate export package (`.xlsx`, `.csv`, `.pdf`, `.json`). |
 | `POST` | `/api/ai/pricing` | Public | Standalone endpoint to evaluate living wage pricing. |
-| `POST` | `/api/ai/catalog` | Public | Server-side Gemini catalog synthesis. |
+| `POST` | `/api/ai/catalog` | Public | Server-side Qwen3-VL catalog synthesis. |
 | `POST` | `/api/copilot/chat` | Optional / Auth | Conversational RAG assistant query for schemes. |
 | `POST` | `/api/speech/transcribe` | Public | Audio transcription across 7 Indic languages. |
 | `GET` | `/api/market/products` | Public | Public marketplace feed with search & category filters. |
@@ -711,7 +712,7 @@ Primary operational endpoints in the Artisera API Gateway:
 - **TypeScript Backend Build**: `npm run build` in `Backend/` $\rightarrow$ **PASS** (`Exit Code: 0`). Zero compilation errors across all 18 route controllers and AI modules.
 - **Flutter Mobile Analysis**: `flutter analyze` in `Mobile_App/` $\rightarrow$ **PASS** (`No issues found!`). Zero lint issues across 71 Dart source files.
 - **Health Check Probe**: `GET /api/health` returns `200 OK` with database ping.
-- **Diagnostics Dashboard**: `GET /` displays real-time connectivity status for Supabase, Gemini, and Sarvam.
+- **Diagnostics Dashboard**: `GET /` displays real-time connectivity status for Supabase, Qwen3-VL, and Sarvam AI on AWS.
 
 ---
 
@@ -746,10 +747,10 @@ Primary operational endpoints in the Artisera API Gateway:
 - [x] Complete Flutter mobile application with 22 screens and Provider state management.
 - [x] 7 Indic languages dynamic UI and translation dictionary (`en`, `hi`, `bn`, `te`, `ta`, `mr`, `kn`).
 - [x] Express.js / TypeScript API Gateway with 18 route controllers and JWT security guards.
-- [x] BiRefNet-HR deep segmentation FastAPI microservice (`AI_Models/app.py`).
+- [x] BiRefNet-HR deep segmentation FastAPI microservice on AWS EC2 (`AI_Models/app.py`).
 - [x] Node.js Sharp zero-GPU CLAHE contrast and studio compositing fallback engine.
-- [x] Indic speech-to-text transcription and audio playback via Sarvam AI API.
-- [x] Gemini 2.5 Flash multimodal vision-language catalog generation with structured JSON output.
+- [x] Indic speech-to-text transcription and audio playback via hosted Sarvam AI speech models on AWS EC2.
+- [x] Qwen3-VL multimodal vision-language catalog generation with structured JSON output.
 - [x] Deterministic Living Wage Cost Floor pricing engine with GI-tag premiums.
 - [x] Explainable 5-dimension Product Intelligence Score (0–100).
 - [x] B2B bulk buyer RFP posting and 5-factor weighted matchmaking algorithm.
@@ -782,7 +783,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 - **Smart India Hackathon 2026** and the Ministry of MSME / Ministry of Textiles for Problem Statement PS-26090.
 - **Hugging Face** and ZhengPeng7 for the open-source `BiRefNet_HR` segmentation weights.
-- **Google DeepMind** for the Google Gemini multimodal model family.
-- **Sarvam AI** for foundational Indic speech and acoustic models (`saaras:v3` and `mayura:v1`).
+- **Qwen Team & Alibaba Cloud** for the Qwen3-VL multimodal vision-language architecture.
+- **Sarvam AI** for foundational Indic speech and acoustic architecture.
 - **Supabase** for PostgreSQL, Row Level Security, and Object Storage infrastructure.
 - The millions of traditional Indian artisans whose generational craftsmanship inspires this work.
